@@ -233,3 +233,7 @@
     background-color: white;
     margin-left: 5px;
 }
+
+select:disabled option {
+    opacity: 1;
+}

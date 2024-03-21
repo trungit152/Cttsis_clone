@@ -133,24 +133,37 @@
 									<li><strong>Họ và tên :</strong> <span id="name"></span></li>
 									<li><strong>Năm vào trường :</strong> <span id="year"></span></li>
 									<li><strong>Bậc đào tạo :</strong> <span id="edu"></span></li>
-									<li><strong>Chương trình :</strong> 
-										<select id="program">
-											<option value="program1">Chương trình 1</option>
-											<option value="program2">Chương trình 2</option>
-											<option value="program3">Chương trình 3</option>
-										</select></li>
-									<li><strong>Khoa/Viện quản lý :</strong> <select id="department"></select></li>
-									<li><strong>Tình trạng học tập :</strong> <<select id="status"></select></li>
+									<li><strong>Chương trình :</strong>
+										<span id="program"></span>
+									<li><strong>Khoa/Viện quản lý :</strong> 
+										<span id="department"></span>
+									</li>
+									<li><strong>Tình trạng học tập :</strong> 
+										<span id="status"></span>
+									</li>
 								</ui>
 							</div>
 							<div class = "grid_column-10-5">
 								<ui>
-									<li><strong>Giới tính :</strong> <select id="sex"></select></li>
+									<li><strong>Giới tính :</strong> 
+										<span id="sex"></span>
+									</li>
 									<li><strong>Lớp :</strong>  <span id="class"></span></li>
 									<li><strong>Khóa học :</strong> <span id="grade"></span></li>
 									<li><strong>Email :</strong> <span id="email"></span></li>
 								</ui>
 							</div>
+							<script>
+								window.addEventListener('DOMContentLoaded', (event) => {
+									if (window.location.pathname.endsWith('index.html')) {
+										var selectElements = document.querySelectorAll('select');
+										selectElements.forEach((select) => {
+											select.disabled = true;
+										});
+									}
+								});
+							</script>
+							
 						</div>
 						<h4>
 							THÔNG TIN HỌC TẬP
