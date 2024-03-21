@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CTTBK-Clone-20215491</title>
+	<link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="sticky-bar"></div>
+		<header class="header">
+			<img src="./asset/image/header.png" alt="header" height="120px" width="100%">
+			<nav class="header_navbar">
+				<ul class = "menu">
+					<li>
+						<a href="#">Đào tạo đại học<img src="./asset/image/arrow_down.png" alt="arrow"></a>
+					</li>
+					<li>
+						<a href="#">Đào tạo sau đại học<img src="./asset/image/arrow_down.png" alt="arrow"></a>
+					</li>
+					<li>
+						<a href="#">Công tác Sinh viên<img src="./asset/image/arrow_down.png" alt="arrow"></a>
+					</li>
+					<li>
+						<a href="#">Tra cứu văn bằng<img src="./asset/image/arrow_down.png" alt="arrow"></a>
+					</li>
+				</ul>
+				<ul id="home">
+					<li><a href="#">Trang chủ</a></li>			
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="grid_row">
+				<div class="grid_column-2">
+					<nav class="category">
+						<h4 class="head1">
+							NGUYỄN HOÀNG ĐỨC TRUNG
+						</h4>
+						<ul class="category-list">
+							<li><a href="#">Thư báo</a></li>
+							<div class="divider"></div>
+							<li><a href="#">Đổi mật khẩu</a></li>
+							<div class="divider"></div>
+							<li><a href="#">Cấp lại mật khẩu Email trường</a></li>
+							<div class="divider"></div>
+							<li><a href="#">Thoát đăng nhập</a></li>
+							<div class="divider"></div>
+							<li><a href="#">Thông tin mật khẩu Email cấp mới</a></li>
+							<div class="divider"></div>
+							<li><a href="#">Xác nhận khai báo y tế</a></li>
+						</ul>
+					</nav>
+					
+					<nav class="category">
+						<h4 class="head1">
+							QUẢN LÝ HỒ SƠ SINH VIÊN
+						</h4>
+						<ul class="category-list">
+							<li><a href="#">Thông tin sinh viên</a></li>
+							<div class="divider"></div>
+							<li><a href="#">Cập nhật thông tin cá nhân</a></li>
+							<div class="divider"></div>
+							<li><a href="#">Thông tin lớp sinh viên</a></li>
+							<div class="divider"></div>
+						</ul>
+					</nav>
+		
+					<nav class="category">
+						<h4 class="head1">
+							ĐÀO TẠO
+						</h4>
+						<ul class="category-list">
+							<li><a href="#">Chương trình đào tạo</a></li><div class="divider"></div>
+							<li><a href="#">Kế hoạch học tập</a></li><div class="divider"></div>
+							<li><a href="#">Kết quả học tập</a></li><div class="divider"></div>
+							<li><a href="#">Đồ án - Tốt nghiệp</a></li><div class="divider"></div>
+							<li><a href="#">Thời khóa biểu tạm thời</a></li><div class="divider"></div>
+						</ul>
+					</nav>
+		
+					<nav class="category">
+						<h4 class="head1">
+							TƯ VẤN TRỰC TUYẾN
+						</h4>
+						<ul class="category-list">
+							<li><a href="#">Hỏi đáp - Tư vấn trực tuyến</a></li><div class="divider"></div>
+						</ul>
+					</nav>
+		
+					<nav class="category">
+						<h4 class="head1">
+							TÀI CHÍNH HỌC VỤ
+						</h4>
+						<ul class="category-list">
+							<li><a href="#">Thông tin công nợ học phí</a></li><div class="divider"></div>
+							<li><a href="#">Thanh toán học phí trực tuyến</a></li><div class="divider"></div>
+						</ul>
+					</nav>
+		
+					<nav class="category">
+						<h4 class="head1">
+							DỊCH VỤ HÀNH CHÍNH
+						</h4>
+						<ul class="category-list">
+							<li><a href="#">ĐK cấp giấy tờ</a></li><div class="divider"></div>
+						</ul>
+					</nav>
+				</div>
+				<div class="grid_column-10"> 
+					<div class="content">
+						<h3 class="content_header">
+							THÔNG TIN CÁ NHÂN
+							<div class="divider"></div>
+						</h3>
+						<h4>
+							THÔNG TIN SINH VIÊN	
+                            <button id="saveButton" class="icon-button" onclick="submitForm()">
+                                <img src="./asset/image/save.png" alt="icon">
+                            </button >
+                            <button id="cancelButton" class="icon-button" onclick="cancelForm()">
+                                <img src="./asset/image/cancel.png" alt="icon">
+                            </button>
+							<div class="big-divider"></div>
+						</h4>
+						<div class="grid_row">
+							<div class="grid_column-10-2">
+								<img class="student_image" src="./asset/image/iconavt.png" width="200px" height="auto">
+								<div id="image_divider" class="divider"></div>
+								<strong>MSSV:</strong>20215491
+							</div>
+							<div class = "grid_column-10-5">
+								<ui>
+									<li><strong>Họ và tên : </strong> <input type="text" id="nameTb" ></li>
+									<li><strong>Năm vào trường : </strong> <input type="text" id="yearTb"></li>
+									<li><strong>Bậc đào tạo : </strong> <input type="text" id="eduTb"></li>	
+									<li><strong>Chương trình : </strong>
+                                        <select id="programList">
+                                            <option value="1">Chuẩn</option>
+                                            <option value="2">Elitech</option>
+                                        </select>
+                                    </li>
+									<li><strong>Khoa/Viện quản lý : </strong>
+                                        <select id="departmentList">
+                                            <option value="1">Trường Cơ khí</option>
+                                            <option value="2">Trường Công nghệ Thông tin và Truyền thông</option>
+                                            <option value="3">Trường Điện - Điện tử</option>
+                                            <option value="4">Trường Hoá và Khoa học sự sống</option>
+                                            <option value="5">Trường Vật liệu</option>
+                                            <option value="6">Khoa Toán - Tin</option>
+                                            <option value="7">Khoa Vật lý Kỹ thuật</option>
+                                            <option value="8">Viện Kinh tế và Quản lý</option>
+                                            <option value="9">Khoa Ngoại ngữ</option>
+                                            <option value="10">Khoa Khoa học và Công nghệ Giáo dục</option>
+                                        </select>
+                                    </li>
+									<li><strong>Tình trạng học tập : </strong> 
+                                        <select id="statusList">
+                                            <option value="1">Học</option>
+                                            <option value="2">Thôi học</option>
+                                        </select>
+                                    </li>
+								</ui>
+							</div>
+							<div class = "grid_column-10-5">
+								<ui>
+                                    
+									<li><strong>Giới tính :</strong> 
+                                        <select id="sexList">
+                                            <option value="male">Nam</option>
+                                            <option value="female">Nữ</option>
+                                        </select>
+                                    </li>
+									<li><strong>Lớp :</strong> <input type="text" id="classTb"></li>
+									<li><strong>Khóa học :</strong> <input type="text" id="gradeTb"></li>
+									<li><strong>Email :</strong> <input type="text" id="emailTb"></li>
+								</ui>
+							</div>
+						</div>
+						<h4>
+							THÔNG TIN HỌC TẬP
+							<div class="big-divider"></div>
+						</h4>
+						<div class="grid_row">
+							<div class="grid_column-10-6">
+								<ui>
+									<li><strong>Tổng kết học kỳ :</strong> 20231</li>
+									<li><strong>Trung bình tích lũy :</strong> 3.02</li>
+									<li><strong>Số TC nợ đăng ký :</strong> 0</li>
+								</ui>
+							</div>
+
+							<div class="grid_column-10-6">
+								<ui>
+									<li><strong>Số TC tích lũy :</strong> 87</li>
+									<li><strong>Trình độ sinh viên :</strong> 3</li>
+									<li><strong>Mức cảnh báo :</strong> M0</li>
+								</ui>
+							</div>
+						</div>
+						<h4>
+							THÔNG TIN CÁ NHÂN
+							<div class="big-divider"></div>
+						</h4>
+						<div class="grid_row">
+							<div class="grid_column-10-6">
+								<ui>
+									<li><strong>Dân tộc :</strong> TÀY</li>
+									<li><strong>Năm TN cấp 3 :</strong>  2021</li>
+									<li><strong>Khóa học :</strong> 66</li>
+									<li><strong>Địa chỉ :</strong> THỊ TRẤN ĐU, HUYỆN PHÚ LƯƠNG, TỈNH THÁI NGUYÊN</li>
+									<li><strong>Số CMTND :</strong> 091***05</li>
+									<li><strong>Nơi cấp :</strong> THÁI NGUYÊN</li>
+									<li><strong>Năm sinh :</strong> 1979</li>
+									<li><strong>Nghề nghiệp :</strong> GIÁO VIÊN</li>
+									<li><strong>Điện thoại :</strong> 083***13</li>
+									<li><strong>Email :</strong> HO*@*IL.COM</li>
+								</ui>
+							</div>
+
+							<div class="grid_column-10-6">
+								<ui>
+									<li><strong>Tôn giáo :</strong> KHÔNG</li>
+									<li><strong>Trường THPT :</strong>  PHỔ THÔNG DÂN TỘC NỘI TRÚ THÁI NGUYÊN</li>
+									<li><strong>Hộ khẩu :</strong> XÃ YÊN NINH, HUYỆN PHÚ LƯƠNG, TỈNH THÁI NGUYÊN</li>
+									<li><strong>Số Điện thoại :</strong> 037***59</li>
+									<li><strong>Họ tên mẹ : </strong> HOÀNG THỊ HIỀN</li>
+									<li><strong>Năm sinh :	</strong> 1979</li>
+									<li><strong>Năm sinh :</strong> 1979</li>
+									<li><strong>Nghề nghiệp :</strong> GIÁO VIÊN</li>
+									<li><strong>Điện thoại :</strong> 094***50</li>
+									<li><strong>Email :</strong> HI*@*IL.COM</li>
+								</ui>
+							</div>
+						</div>
+						<li id="note">
+							<strong>Ghi chú:</strong> Nếu sinh viên thấy thông tin của mình chưa chính xác, xin vui lòng liên hệ phòng Đào tạo để cập nhật lại.
+						</li>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<img src="./asset/image/footer.png">
+		</footer>
+	</div>
+    <script  src="./main.js" ></script>
+</body>
+</html>

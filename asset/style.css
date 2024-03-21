@@ -1,0 +1,235 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    font-family: Arial, sans-serif;
+}
+
+.sticky-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; 
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 1000; 
+    transition: background-color 0.3s ease; 
+}
+
+.sticky-bar.fixed {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.grid_full-width{
+    width: 100%;
+}
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid_column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+
+.grid_column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 80%;
+}
+
+.grid_column-10-2{
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 25%;
+    text-align: center;
+}
+.grid_column-10-5{
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 37.5%;
+    text-align: left;
+}
+.grid_column-10-5 li{
+    list-style: none;
+    margin-top: 20px;
+}
+.grid_column-10-6{
+    margin-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 50%;
+}
+.grid_column-10-6 li{
+    list-style: none;
+    margin-top: 20px;
+}
+.header_navbar{
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    width: 24.7%;
+    margin: 0;
+    font-size: 1.2rem;
+    position: center;
+    padding-top: 0;
+    display: inline-block;
+    height: 30px; 
+    background-color:rgb(231,233,237);
+}
+
+.menu li:hover{
+    background-color: rgb(140,21,21);
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.menu li:hover a {
+    color: white; 
+    background-color: rgb(140, 21, 21);
+} 
+
+#home{
+    margin-top: 4px;
+    height: 30px;
+    width: 5%;
+    background-color:rgb(231,233,237);
+}
+#home li a{
+    text-decoration: none;
+    color: rgb(140, 21, 21);
+    line-height: 30px;
+    text-align: center;
+}
+#home li a:hover{
+    text-decoration:underline;
+}
+
+.container{
+    margin-top: 30px;
+}
+
+.category-list{
+    margin-left: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.head1{
+    text-decoration: none;
+    color: rgb(140, 21, 21);
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.category{
+    margin-top: 20px;
+    background-color: rgb(242,241,235);
+    width: 100%;
+}
+.category-list li{
+    height: 30px;
+}
+
+.category-list li a{
+    height: 100%;
+    color: rgb(51,122,183);
+    font-size: 14px;
+    display: block;
+    margin: 5px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.category-list li a:hover{
+    background-color: rgb(235,235,235);
+}
+
+.footer img{
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+}
+
+.divider {
+    border-top: 1px solid rgb(218, 214, 214);
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.big-divider{
+    margin-top: 20px;
+    border-top: 5px solid rgb(255,153,0);
+    margin-right: 300px;
+}
+
+.content{
+    margin-top: 20px;
+    width: 100%;
+    float: right;
+}
+
+.content_header{
+    text-decoration: none;
+    color: rgb(140, 21, 21);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.content h4{
+    padding-top: 60px;
+    text-decoration: none;
+    color: rgb(140, 21, 21);
+    font-weight: bolder;
+    text-align: left;
+}
+
+#note{
+    margin-top: 50px;
+    list-style: none;
+}
+
+.icon-button img{
+    width: 20px;
+    height: auto;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.student_image{
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#image_divider{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.icon-button1 img{
+    width: 20px;
+    height: auto;
+    background-color: white;
+    margin-left: 5px;
+}
